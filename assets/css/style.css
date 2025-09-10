@@ -12,7 +12,7 @@
 
 :root {
   --bg-color: #fff;
-  --snd-bg-color: #d5fdf9;
+  --snd-bg-color: #95b4c7;
   --text-color: #000;
   --main-color: #406e8e;
 }
@@ -185,4 +185,49 @@ span {
   box-shadow: 0 0 1.6rem var(--main-color);
 }
 
+/* Code Skills section */
 
+.skills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  background-color: var(--snd-bg-color);
+}
+
+.skills-img img {
+  width: 30vw;
+  border: 2px solid var(--main-color);
+  border-radius: 20%;
+  box-shadow: 0 0 25px var(--main-color);
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+
+.skills-img img:hover {
+  box-shadow: 0 0 25px var(--main-color), 0 0 35px var(--main-color),
+    0 0 45px var(--main-color);
+}
+
+.heading {
+  font-size: 6rem;
+  text-align: left;
+}
+
+.skills-content {
+  padding: 0 4rem;
+}
+
+.skills-content h2 {
+  text-align: left;
+  line-height: 1.2;
+}
+
+.skills-content h3 {
+  font-size: 3rem;
+}
+
+.skills-content p {
+  font-size: 1.6rem;
+  margin: 2rem 0 3rem;
+}
