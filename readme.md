@@ -4,8 +4,7 @@ O meu objetivo principal neste projeto, vai ser tentar desenvolver um site como 
 
 
 ## Ladding Page, planejamento...
-OBS: Trabalho na área como desenvolvedor, porém, estou no meu ultimo ano da faculdade e sinto que não sei nada, 
-por isso estou me encorajando a fazer tudo no braço!
+OBS: Trabalho na área como desenvolvedor, porém, estou no meu ultimo ano da faculdade, por isso estou me encorajando a fazer tudo no braço!
 
 
 ### Header 
