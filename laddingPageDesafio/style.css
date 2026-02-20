@@ -43,7 +43,7 @@ nav li a:hover {
 
 /* ... [seu código anterior do reset, header e nav continua igual] ... */
 
-.main {
+.apresentacao {
     display: flex;
     justify-content: center; /* Centraliza o conteúdo no meio da tela */
     align-items: center;
@@ -55,7 +55,7 @@ nav li a:hover {
     padding-right: 50px;
 }
 
-.main p {
+.apresentacao p {
     color: white; /* Adicionei para dar contraste com o fundo verde */
     font-size: 24px;
     max-width: 500px; /* Impede que o texto fique muito esticado em telas grandes */
