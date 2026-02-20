@@ -1,73 +1,80 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-li {
-    list-style-type: none;
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: red;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    padding: 20px 30px; /* Reduzi um pouco para não ocupar a tela toda */
+    z-index: 1000; /* Garante que o menu fique sobre os outros elementos */
 }
 
-a {
+header h1{
+    margin-left: 20px;
+}
+
+nav li {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-left: 5em; /* Ajustado para melhor espaçamento */
+    background-color: yellow;
+    border-radius: 10px; /* Um arredondamento leve fica moderno */
+}
+
+nav li a {
     text-decoration: none;
     color: black;
+    font-weight: bold;
 }
 
+/* Exemplo de hover para interatividade */
+nav li a:hover {
+    color: darkred;
+}
 
-#header {
-    max-width: 100%;
-    height: 100px;
-    padding: 0px 30px;
-    background-color: red;
+/* ... [seu código anterior do reset, header e nav continua igual] ... */
+
+.main {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    justify-content: center; /* Centraliza o conteúdo no meio da tela */
     align-items: center;
-}
-
-#navegacao {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 10px;
-    background-color: yellow;
-    gap: 70px;
-}
-
-#apresentacao {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: center;
-    align-items: center;
+    gap: 200px; /* Cria um espaço uniforme entre o texto e a imagem! */
     height: 100vh;
-    background-color: rgba(255, 255, 255, 0);
+    background-color: green;
+    padding-top: 80px; /* Compensa a altura do header para nada ficar escondido */
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.main p {
+    color: white; /* Adicionei para dar contraste com o fundo verde */
+    font-size: 24px;
+    max-width: 500px; /* Impede que o texto fique muito esticado em telas grandes */
 }
 
 .imagem {
-    max-width: 100%;
-    max-height: 100%;
+    width: 400px;
+    height: 400px;
+    border-radius: 30%;
+    object-fit: cover; /* Garante que a foto não fique espremida/esticada dentro do círculo */
 }
 
-#sobre-mim {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.sobre-mim{
     height: 100vh;
-    background-color: blue
-}
+    background-color: cornflowerblue;
+    padding-top: 80px;
+    padding-left: 50px;
+    padding-right: 50px;
 
-#projetos {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: green
-}
 
-#rodape{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100px;
-    background-color: purple
+
 }
