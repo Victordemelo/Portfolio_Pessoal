@@ -68,13 +68,58 @@ nav li a:hover {
     object-fit: cover; /* Garante que a foto não fique espremida/esticada dentro do círculo */
 }
 
-.sobre-mim{
-    height: 100vh;
-    background-color: cornflowerblue;
-    padding-top: 80px;
+
+
+/*-----------------------------------*/
+/* Estilos para a seção "Sobre Mim" */
+/*-----------------------------------*/
+.sobre-mim {
+    min-height: 100vh;
+    background-color: #E3BC9A;
+    padding-top: 140px;
     padding-left: 50px;
     padding-right: 50px;
-
-
-
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column; 
+    gap: 50px; 
 }
+
+.topico-um, .topico-dois {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.topico-dois {
+    flex-direction: row-reverse;
+}
+
+.imagem-sobre {
+    margin: 0px 40px;
+    width: 500px;
+    height: 400px;
+    border-radius: 30%;
+    object-fit: cover;
+}
+
+.paragrafos-topico-um, .paragrafos-topico-dois {
+    flex-direction: row;
+    display: flex;
+    gap: 20px;
+    width: 100%;
+}
+
+.card {
+    margin: 20px;
+    background-color: rgba(0, 0, 0, 0.2); 
+    padding: 30px;
+    border-radius: 15px;
+    color: white;
+    font-size: 18px;
+    line-height: 1.5;
+    flex: 1; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
