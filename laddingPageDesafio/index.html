@@ -132,9 +132,28 @@
 
         <div class="contato-footer">
             <p>Fale diretamente comigo</p>
-            <button>Entre em contato</button>
+            <button id="btn-contato">Entre em contato</button>
         </div>
     </footer>
+
+    <div id="modal-contato" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Fale Comigo</h2>
+            <form id="form-contato">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" required>
+
+                <button type="submit" class="btn-enviar">Enviar Mensagem</button>
+            </form>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 
